@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <h1>Loan Prediction Model</h1>
+  <h3>This Model Predicts Whether Chances To Get The Loan Approved</h3>
+</head>
+<body>
+
+  <form action="{{url_for('predict')}}"method="post">
+    <label for="Gender">Gender:</label>
+    <input type="text" id="Gender" name="Gender"size="10"><br><br>
+    <label for="Married">Married:</label>
+    <input type="text" id="Married" name="Married"><br><br>
+    <label for="Dependents">Dependents:</label>
+    <input type="text" id="Dependents" name="Dependents"><br><br>
+    <label for="Education">Education:</label>
+    <input type="text" id="Education" name="Education"><br><br>
+    <label for="LoanAmount">Loan Amount:</label>
+    <input type="text" id="LoanAmount" name="LoanAmount"><br><br>
+    <label for="Credit_History">Credit History:</label>
+    <input type="text" id="Credit_History" name="Credit_History"><br><br>
+    <label for="Property_Area">Property Area:</label>
+    <input type="text" id="Property_Area" name="Property_Area"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <style>
+   body{
+      background: linear-gradient(to bottom right, #30e3cb, #6697e1);
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
+    h1{
+
+
+    margin: 50px 0 30px;
+    font-size: 56px;
+    font-weight: 700;
+    font-family: 'Tahoma', cursive;
+    color: #303030;
+    text-align: centre;
+
+    }
+    hr{
+      border-top-style: dotted;
+      border-top-width: 5px;
+      border-bottom: none;
+      width: 5%;
+      margin: 20px auto 40px auto;
+      border-color: #EAF6F6;
+    }
+    label{
+      color: #EAF6F6;
+      font-size: 1.2rem;
+      display: block;
+      margin: 20px auto;
+      width: 20%;
+      text-align: centre;
+    }
+    input[type="text"]{
+      border: none;
+      border-radius: 5px;
+      padding: 5px 5px;
+      margin: 10px auto;
+      width: 10%;
+      display: block;
+      font-size: 1.2rem;
+      background-color: rgba(255, 255, 255, 0.3);
+      transition: all 0.3s ease-in-out;
+    }
+    input[type="text"]:hover{
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 0px 0px 10px 2px rgba(50, 255, 0, 0.3);
+    }
+    input[type="submit"]{
+      background: #30e3cb;
+      background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+      background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+      background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+      background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+      background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      padding: 12px 20px;
+      margin: 20px auto;
+      width: 40%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    input[type="submit"]:hover{
+      background: #3cb0fd;
+      background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+      background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    }
+    h4{
+      margin: 20px auto;
+      font-size: 1.2rem;
+      color: white;
+    }
+    p{
+      color: white;
+      font-size: 1rem;
+    }
+    .footer {
+			background-color: ##6697e1;
+			padding: 5px;
+			text-align: center;
+		}
+  </style>
+
+
+	<!-- Your website content goes here -->
+	<footer class="footer">
+		Copyright © 2023 Abhay Shanbhag in Collaboration with Suraj Mohite
+	</footer>
+</body>
+</html>
