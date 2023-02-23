@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Abhay's Loan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Abhay's Loan</h1>
+  <hr>
+  <div class="top">
+  <img class="mon" src="news.jpg" alt="money-img">
+  </div>
+  <form action="{{url_for('predict')}}"method="post">
+    <label for="Gender">Gender:</label>
+    <input type="text" id="Gender" name="Gender"><br><br>
+    <label for="Married">Married:</label>
+    <input type="text" id="Married" name="Married"><br><br>
+    <label for="Dependents">Dependents:</label>
+    <input type="text" id="Dependents" name="Dependents"><br><br>
+    <label for="Education">Education:</label>
+    <input type="text" id="Education" name="Education"><br><br>
+<!--    <label for="Self_Employed">Self Employed:</label>-->
+<!--    <input type="text" id="Self_Employed" name="Self_Employed"><br><br>-->
+<!--    <label for="ApplicantIncome">Applicant Income:</label>-->
+<!--    <input type="text" id="ApplicantIncome" name="ApplicantIncome"><br><br>-->
+<!--    <label for="CoapplicantIncome">Coapplicant Income:</label>-->
+<!--    <input type="text" id="CoapplicantIncome" name="CoapplicantIncome"><br><br>-->
+    <label for="LoanAmount">Loan Amount:</label>
+    <input type="text" id="LoanAmount" name="LoanAmount"><br><br>
+<!--    <label for="Loan_Amount_Term">Loan Amount Term:</label>-->
+<!--    <input type="text" id="Loan_Amount_Term" name="Loan_Amount_Term"><br><br>-->
+    <label for="Credit_History">Credit History:</label>
+    <input type="text" id="Credit_History" name="Credit_History"><br><br>
+    <label for="Property_Area">Property Area:</label>
+    <input type="text" id="Property_Area" name="Property_Area"><br><br>
+    <div class="imgcl">
+      <input class="btn" type="submit" value="Submit">
+    </div>
+    
+  </form>
+  <br>
+  <br>
+  <h4>{{ prediction_text }}  </h4>
+<p>hellooooooooooooo</p>
+<p class="copyright">© Abhay Shanbhag</p>
+</body>
+</html>
