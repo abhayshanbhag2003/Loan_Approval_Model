@@ -2,6 +2,11 @@
 Classification Based Standard Loan Approval Model 
 
 This Model is trained on the  dataset which gives us the Information about the Customer and it predicts whether he/she can have a loan approved .
+
+
+
+![image](https://github.com/abhayshanbhag2003/Loan_Approval_Model/assets/100664539/d55fde3f-979b-495a-98ee-62e305790dd5)
+
 Folowing are the Information in the Dataset:
 
 
